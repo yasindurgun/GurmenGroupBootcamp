@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidPrinciples", "SolidPrinciples\SolidPrinciples.csproj", "{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week1", "Week1", "{31E4CE58-63C5-4D28-8D73-8B77C1A2F6F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeDesignPattern", "BridgeDesignPattern\BridgeDesignPattern.csproj", "{F1F23B26-601C-404A-98DA-61242545D75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadeDesignPattern", "FacadeDesignPattern\FacadeDesignPattern.csproj", "{64C2F968-1C9C-4822-810F-3471AC09E634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F23B26-601C-404A-98DA-61242545D75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F23B26-601C-404A-98DA-61242545D75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F23B26-601C-404A-98DA-61242545D75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F23B26-601C-404A-98DA-61242545D75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C2F968-1C9C-4822-810F-3471AC09E634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C2F968-1C9C-4822-810F-3471AC09E634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C2F968-1C9C-4822-810F-3471AC09E634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C2F968-1C9C-4822-810F-3471AC09E634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54A7F2B1-02D1-4678-ADBA-C1D0CC10938B} = {31E4CE58-63C5-4D28-8D73-8B77C1A2F6F6}
+		{F1F23B26-601C-404A-98DA-61242545D75B} = {31E4CE58-63C5-4D28-8D73-8B77C1A2F6F6}
+		{64C2F968-1C9C-4822-810F-3471AC09E634} = {31E4CE58-63C5-4D28-8D73-8B77C1A2F6F6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF0B5C09-3BA2-4DC9-90BB-70F86ADF08BE}
+	EndGlobalSection
+EndGlobal
