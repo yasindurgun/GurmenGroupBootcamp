@@ -1,0 +1,14 @@
+3. hafta ödevlerini içerir.
+
+- Observer Desgin Pattern
+	Nesne kümeleri arasýndaki one-to-many iliþkiyi tanýmlar. Bir nesnenin durumu deðiþtiðinde
+bütün baðýmlýlarýna bildirilir. Observer Design Pattern’da loose coupling iliþkisi vardýr.
+Ýki obje birbiriyle iliþkilidir ama birbiri hakkýnda çok az þey bilirler. Birinde yaptýðýmýz deðiþlik diðerini etkilemez. 
+Biz bu örneðimizde derste iþlediðimiz Events ve EventHandler yaklaþmýný MediatR ýn INotification ve INotificationHandler aracýný
+kullanmadan Observer Design Pattern ile gerçekleþtireceðiz.
+
+- Aspect Oriented Programming
+	En önemli kullaným alaný Cross Cutting durumlarda ortaya çýkar. Yani diyebiliriz ki uygulama içerisinde birçok bölümde
+kullanýlan ve kesiþen yani bi anlamda tekrar eden fonksiyonel olmayan kodlarýn ufak parçalara ayrýlarak kullanýlmasýna dayanýr.
+
+- Api CRUD Operations (Dapper + PostgreSql)
