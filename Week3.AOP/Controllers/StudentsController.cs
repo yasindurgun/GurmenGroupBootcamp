@@ -15,7 +15,7 @@ namespace Week3.AOP.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            Console.WriteLine("controller");
+            //Console.WriteLine("controller");
             return Ok(s.GetList());
         }
     }

@@ -13,6 +13,7 @@ namespace Week3.AOP
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
                 .EnableInterfaceInterceptors().SingleInstance();
+
         }
     }
 }

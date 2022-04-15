@@ -29,7 +29,8 @@ namespace Week3.AOP
             {
                 Debug.WriteLine(ex.ToString());
             }
-            Debug.WriteLine($"Performance : {invocation.Method.DeclaringType.FullName}.{invocation.Method.Name} = {_stopWatch.Elapsed.TotalSeconds}");
+            Console.WriteLine("deneme");
+            Console.WriteLine($"Performance : {invocation.Method.DeclaringType.FullName}.{invocation.Method.Name} = {_stopWatch.Elapsed.TotalSeconds}");
 
             _stopWatch.Reset();
         }

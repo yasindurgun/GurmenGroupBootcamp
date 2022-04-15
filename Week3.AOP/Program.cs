@@ -1,6 +1,11 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Week3.AOP;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new AutofacBusinessModule()));
 
 // Add services to the container.
 
