@@ -6,6 +6,7 @@ using Week3.API_Odev.Filters;
 using Week3.API_Odev.Middlewares;
 using Week3.API_Odev.Repositories.Abstract;
 using Week3.API_Odev.Repositories.Concrete;
+using Week3.API_Odev.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,7 @@ builder.Services.AddScoped<ValidateFilter>();
 
 
 builder.Services.AddScoped<IDbConnection>(sp => new NpgsqlConnection(builder.Configuration.GetConnectionString("Postgresql")));
-builder.Services.AddScoped<ICarRepository, CarRepository>();
+
 
 builder.Services.AddScoped<IDbTransaction>(sp =>
 {
@@ -35,7 +36,8 @@ builder.Services.AddScoped<IDbTransaction>(sp =>
 
 
 });
-
+builder.Services.AddScoped<ICarRepository, CarRepository>();
+builder.Services.AddScoped<UnitOfWork>();
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

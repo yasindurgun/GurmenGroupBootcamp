@@ -47,7 +47,7 @@ namespace Week3.API_Odev.Repositories.Concrete
         {
             var command = "insert into cars(modelyear,price,description,color,serialnumber)values(@modelyear,@price,@description,@color,@serialnumber) returning id";
 
-            var id = await _connection.ExecuteScalarAsync<int>(command, carInsertCommand.CarRequestDto);
+            var id = await _connection.ExecuteScalarAsync<int>(command, carInsertCommand);
 
 
             return id;
