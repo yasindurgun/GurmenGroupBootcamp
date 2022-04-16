@@ -28,15 +28,15 @@ builder.Services.AddScoped<ValidateFilter>();
 builder.Services.AddScoped<IDbConnection>(sp => new NpgsqlConnection(builder.Configuration.GetConnectionString("Postgresql")));
 
 builder.Services.AddScoped<UnitOfWork>();
-builder.Services.AddScoped<IDbTransaction>(sp =>
-{
+//builder.Services.AddScoped<IDbTransaction>(sp =>
+//{
 
-    var connection = sp.GetRequiredService<IDbConnection>();
-    connection.Open();
-    return connection.BeginTransaction();
+//    var connection = sp.GetRequiredService<IDbConnection>();
+//    connection.Open();
+//    return connection.BeginTransaction();
 
 
-});
+//});
 
 builder.Services.AddScoped<ICarRepository, CarRepository>();
 
